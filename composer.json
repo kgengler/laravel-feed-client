@@ -1,0 +1,21 @@
+{
+    "name": "kgengler/feed-client",
+    "description": "An Atom and RSS feed client for the Laravel Framework",
+    "keywords": ["feed", "client", "rss", "atom","laravel", "laravel4", "laravel5"],
+    "authors": [
+        {
+            "name": "Kyle Gengler",
+            "email": "kyle.gengler@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Kgengler\\FeedClient\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
