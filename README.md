@@ -1,5 +1,7 @@
 # Feed Client Laravel Service Provider
 
+[![Packagist](https://img.shields.io/packagist/v/kgengler/feed-client.svg)](https://packagist.org/packages/kgengler/feed-client)
+
 > This branch is for Laravel 4.x
 
 An Atom and RSS feed client for the Laravel Framework
