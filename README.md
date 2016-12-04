@@ -111,7 +111,7 @@ $feed->getTitle(); // Feed Title
 $feed->getDescription(); // Feed Description
 $feed->getLink(); // Link to feed
 
-$feed_items = $laravel_feed->getItems(); // Items in feed
+$feed_items = $feed->getItems(); // Items in feed
 
 // Feed items are given as a collection of FeedItem objects
 foreach($feed_items as $item) {
