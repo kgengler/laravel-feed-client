@@ -23,7 +23,7 @@ class FeedClientServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
-        $this->package('kgengler/rss-client', 'feed-client');
+        $this->package('kgengler/feed-client', 'feed-client');
     }
 
     /**
