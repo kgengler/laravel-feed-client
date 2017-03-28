@@ -2,6 +2,7 @@
     "name": "kgengler/feed-client",
     "description": "An Atom and RSS feed client for the Laravel Framework",
     "keywords": ["feed", "client", "rss", "atom","laravel", "laravel4", "laravel5"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Kyle Gengler",
