@@ -2,7 +2,8 @@
 
 [![Packagist](https://img.shields.io/packagist/v/kgengler/feed-client.svg)](https://packagist.org/packages/kgengler/feed-client)
 
-> This branch is for Laravel 5.x
+> This branch is for Laravel 5.x development, there is no stable version
+> available yet
 > For Laravel 4.x see https://github.com/kgengler/laravel-feed-client/tree/v4.x
 
 An Atom and RSS feed client for the Laravel Framework
@@ -23,12 +24,6 @@ Run `composer update`.
 
 ## Configuration
 
-Publish the package configuration using Artisan.
-
-```
-php artisan config:publish kgengler/feed-client
-```
-
 Find the providers key in your app/config/app.php and register the Feed Client Service Provider.
 
 ```php
@@ -47,12 +42,18 @@ Find the aliases key in your app/config/app.php and add the Feed Client facade a
 )
 ```
 
-Open the configuration file in app/config/packages/kgengler/feed-client/config.php, and add the feed 
+Publish the package configuration using Artisan.
+
+```
+php artisan config:publish
+```
+
+Open the configuration file in app/config/feed-client.php, and add the feed 
 you need to access
 
 ```php
 <?php
-// app/config/packages/kgengler/feed-client/config.php
+// app/config/feed-client.php
 
 return array(
     // The `laravel` key here is used to fetch the feed later. You can specify multiple
