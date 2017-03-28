@@ -23,7 +23,13 @@ class FeedClientServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
-        $this->package('kgengler/feed-client', 'feed-client');
+        $path = __DIR__.'/config/feed-client.php';
+
+        $this->mergeConfigFrom($path, 'feed-client');
+
+        if (function_exists('config_path')) {
+            $this->publishes([$path => config_path('feed-client.php')]);
+        }
     }
 
     /**
@@ -32,7 +38,7 @@ class FeedClientServiceProvider extends ServiceProvider {
      * @return void
      */
     public function register() {
-        $this->app->bind('feed-client', function () {
+        $this->app->singleton('Kgengler\FeedClient\FeedFactory', function() {
             return new FeedFactory();
         });
     }
@@ -43,6 +49,7 @@ class FeedClientServiceProvider extends ServiceProvider {
      * @return array
      */
     public function provides() {
-        return array('feed-client');
+        return array('Kgengler\FeedClient\FeedFactory');
     }
 }
+
