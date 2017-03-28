@@ -2,7 +2,8 @@
 
 [![Packagist](https://img.shields.io/packagist/v/kgengler/feed-client.svg)](https://packagist.org/packages/kgengler/feed-client)
 
-> This branch is for Laravel 4.x
+> This branch is for Laravel 5.x
+> For Laravel 4.x see https://github.com/kgengler/laravel-feed-client/tree/v4.x
 
 An Atom and RSS feed client for the Laravel Framework
 
@@ -13,7 +14,7 @@ Add the following line to the `require` section of `composer.json`:
 ```json
 {
     "require": {
-        "kgengler/feed-client": "4.*"
+        "kgengler/feed-client": "5.*"
     }
 }
 ```
